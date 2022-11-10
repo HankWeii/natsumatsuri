@@ -1,0 +1,140 @@
+body{
+    background-image: url("basho.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+    margin: 8px 0px 8px 0px;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo{
+    align-self:flex-start;
+    float:left;
+}
+
+nav{
+    display: flex;
+    align-self: end;
+    position: relative;
+}
+
+.navitem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 12px 0 0;
+}
+
+.navitem:hover{
+    color: white;
+    top:-8px;
+}
+
+.search{
+    position: absolute;
+    right: 20px;
+    top:-40px;
+}
+
+.navicon{
+    width: 60px;
+    height: 60px;
+    background-image: url("natsumatsuri.png");
+    background-repeat: no-repeat;
+    background-size: 225px 150px;
+}
+
+nav .navitem:nth-child(1) .navicon{
+    background-position: -92px -73px;
+}
+
+nav .navitem:nth-child(2) .navicon{
+    background-position: -10px -8px;
+}
+nav .navitem:nth-child(3) .navicon{
+    background-position: -18px -72px;
+}
+
+nav .navitem:nth-child(4) .navicon{
+    background-position: -158px -73px;
+}
+
+.titleicon{
+    width: 250px;
+    height: 84px;
+    background-image: url("title.png");
+    background-size: 250px 250px;
+    background-position:5px -70px;
+}
+
+.logo{
+    display: flex;
+}
+
+#burger:checked + nav {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    nav{
+        display:none;
+    }
+    #burger:checked + nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+input{
+    display:none;
+}
+
+
+#burgericon {
+    width:80px;
+}
+
+img{
+    width: 600px;
+}
+
+.open{
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    position: relative;
+}
+
+#open {
+    position: absolute;
+    bottom: 520px;
+    left: 30%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+ .silder {
+    background-color: black;
+    height: 2000px;
+    width: 2100px;
+    position:relative;
+    bottom: 1200px;
+}
+
+/* .silder1 {
+    background-color: black;
+    height: 250px;
+    width: 1903px;
+    position:relative;
+    bottom: 92px;
+}  */
+
